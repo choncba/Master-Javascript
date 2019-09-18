@@ -1,0 +1,20 @@
+/* Tema verde */
+body{
+    background: url('../img/hojas.jpg');
+}
+
+#logo{
+    background: #225e3e;
+}
+
+#menu ul li:hover{
+    background: #225e3e;
+}
+
+.button-more{
+    background: #225e3e;
+}
+
+.ui-accordion-header.ui-state-active{
+    background: #225e3e;
+}

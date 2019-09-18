@@ -1,0 +1,20 @@
+/* Tema rojo */
+body{
+    background: url('../img/rojo.jpg');
+}
+
+#logo{
+    background: #f34141;
+}
+
+#menu ul li:hover{
+    background: #f34141;
+}
+
+.button-more{
+    background: #f34141;
+}
+
+.ui-accordion-header.ui-state-active{
+    background-color: #f34141;
+}

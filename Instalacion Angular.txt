@@ -1,0 +1,23 @@
+Se realiza desde la consola
+VER: https://cli.angular.io
+
+DESINSTALACION:
+npm uninstall -g @angular/cli
+nmp cache verify
+npm cache clear --force
+
+INSTALACION
+npm install -g @angular/cli
+
+CREAR PROYECTO
+Ir a la carpeta donde deseamos crear el proyecto e ingresar: 
+ng new NOMBRE_DEL_PROYECTO
+
+ABRIR en CODE
+En la carpeta del proyecto hacer:
+code .
+(Desactivar la extension TypeScript Auto Compiler)
+
+Correr la APP:
+ng serve
+Abrir el navegador en localhost:4200

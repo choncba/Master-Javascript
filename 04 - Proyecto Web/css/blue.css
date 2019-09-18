@@ -1,0 +1,20 @@
+/* Tema azul */
+body{
+    background: url('../img/cielo.jpg');
+}
+
+#logo{
+    background: #5866e4;
+}
+
+#menu ul li:hover{
+    background: #5866e4;
+}
+
+.button-more{
+    background: #5866e4;
+}
+
+.ui-accordion-header.ui-state-active{
+    background-color: #5866e4;
+}

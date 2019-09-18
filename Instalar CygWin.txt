@@ -1,0 +1,3 @@
+Consola de UNIX para windows
+
+Descargar de acá: https://cygwin.com/install.html e instalarlo

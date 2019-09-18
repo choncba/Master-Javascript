@@ -1,0 +1,2 @@
+Para instalar TypeScript primero es necesario tener instalado node.js https://nodejs.org/en/
+Luego en la consola hacer: npm install -g typescript

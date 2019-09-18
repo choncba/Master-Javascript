@@ -1,0 +1,7 @@
+Primero es necesario tener instalado node.js
+Con la carpeta del proyecto abierto en VS code, lanzar una consola y escribir alguna de estas opciones:
+npm install --save @types/jquery    --> Lo instala solo en la carpeta del proyecto actual
+npm install -g @types/jquery     	--> Lo instala de forma global
+
+Listo!
+

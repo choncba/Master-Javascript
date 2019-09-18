@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Proyecto con JS</title>
+        <!-- Estilo CSS de la web -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!-- Tema por defecto: -->
+        <link id="tema" rel="stylesheet" type="text/css" href="css/green.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Scripts JS de la web -->
+        <script src="js/main.js"></script>
+        <!-- Incluyo Plugin de validacion de formulario de http://www.formvalidator.net/ -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    </head>
+    <body>
+        <!-- Botonera para cambiar el tema -->
+        <div id="cambiar_tema">
+            <div id="a_verde"></div>
+            <div id="a_rojo"></div>
+            <div id="a_azul"></div>
+        </div>
+        <!-- Parte principal -->
+        <section id="global">
+            <!-- Cabecera -->
+            <header>
+                <div id="logo"><h1>Proyecto JS</h1></div>
+                <div class="clearfix"></div> <!-- La unica fincion de esto es limpiar los float de los estilos -->
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="reloj.html">Reloj</a></li>
+                        <li><a href="acerca.html">Sobre mi</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Contenido -->
+            <section id="content">
+                <div id="box">
+                    <h2>Contacto</h2>
+                    <form action="" method="POST" id="form_contact">
+                        <label for="name">Nombre</label>
+                        <!-- Ver plugin de validacion de datos http://www.formvalidator.net/ -->
+                        <input type="text" name="name" data-validation="alphanumeric" data-validation-length="min4">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" data-validation="alphanumeric" data-validation-length="min4">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" data-validation="email">
+                        <label for="genero">Género</label>
+                        <select name="genero" data-validation="required">
+                            <option value="men">Hombre</option>
+                            <option value="women">Mujer</option>
+                        </select>
+                        <label for="date">Fecha de nacimiento</label>
+                        <input type="date" name="date" data-validation="date" data-validation-format="yyyy-mm-dd">
+                        <label for="years">Edad</label>
+                        <input type="number" name="years" data-validation="number" data-validation-allowing="range[1;100]">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <!-- Sidebar -->
+                <aside id="sidebar">
+                    <div id="about">
+                        <h4><span>¿Quién Soy?</span></h4>
+                        <img src="img/caracol.jpg" alt="">
+                        <p>
+                            Inicia Sesión.
+                        </p>
+                    </div>
+                    <!-- Login -->
+                    <div id="login">
+                        <h4><span>Identificarse:</span></h4>
+                        <form>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="nombre">
+                            <label for="mail">Correo</label>
+                            <input type="email" name="mail" id="mail">
+                            <label for="pass">Contraseña</label>
+                            <input type="password" name="pass" id="password">
+                            <input type="submit" value="Entrar">
+                        </form>
+                    </div>
+                </aside>
+                <div class="clearfix"></div>
+            </section>
+        </section>
+        <!-- Footer -->
+        <footer>
+            Master en JS  - Luciano Bono @copy
+            <a href="#" class="subir">Subir</a>
+        </footer>
+    </body>
+</html>

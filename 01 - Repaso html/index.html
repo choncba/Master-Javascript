@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Repaso HTML</title>
+    </head>
+    <body>
+        <center><h1>Hola</h1></center>
+        <h2>Bienvenidos</h2>
+        <hr/>
+        <p>Esto es un <strong>repaso</strong> de <em>html</em></p>
+        <span id="h3"><h3>Mas chiquito?</h3></span>
+        <blockquote>Esto es una cita</blockquote>
+        <h2>Lista Ordenada:</h2>
+        <ol>
+            <li>Coca</li>
+            <li>Fernet</li>
+        </ol>
+        <h2>Lista Desordenada:</h2>
+        <ul>
+            <li>Coca</li>
+            <ul>
+                <li>De litro y cuarto va como piña</li>
+            </ul>
+            <li>Fernet</li>
+            <ul>
+                <li>Branca, obvio</li>
+            </ul>
+        </ul>
+        <hr>
+        <h2>Imagenes:</h2>
+        <img src="imagen.jpg" alt="Simpsons" title="Simpsons" width="400px" height=""/>
+        <hr>
+        <h2>Tablas:</h2>
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <td>Apellido</td>
+                <td>Edad</td>
+            </tr>
+            <tr>
+                <td>Luciano</td>
+                <td>Bono</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td colspan="2">Perez</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Formularios:</h2>
+        <!-- <form action="" method="POST"> Se usa en PHP-->
+        <form>
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre"/>
+            </p>
+            <p>
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descripcion"></textarea>
+            </p>
+            <input type="radio" name="genero" value="n/d">n/d<br>
+            <input type="radio" name="genero" value="masculino">masculino<br>
+            <input type="radio" name="genero" value="femenino">femenino<br>
+            <br>
+            <select name="generoselect">
+                <option value="n/d">N/D</option>
+                <option value="masculino">MASCULINO</option>
+                <option value="femenino">FEMENINO</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <hr>
+        <a href="https://google.com">Link a Google</a>
+        </body>
+</html>
+

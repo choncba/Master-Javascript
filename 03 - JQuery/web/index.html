@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Aprendiendo JQery</title>
+        <!-- Buscar JQuery en https://jquery.com/download/ -->
+        <!-- Asi lo integro desde internet: -->
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+        <!-- Así lo integro desde el archivo de jquery: -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <!-- <script>
+            // Verifico que se cargo JQuery OK
+            $(document).ready(()=>{console.log("JQuery y web Cargados!");});
+        </script> -->
+        <script type="text/javascript" src="js/01-selectores.js"></script>
+        <style>
+            .bloque{
+                border: 2px black dashed;
+            }
+
+            .margen-superior{
+                margin-top: 45px;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Aprendiendo JQuery</h1>
+        <p id="rojo" class="otra">Ejercicios de jQuery</p>
+        <p id="amarillo" class="otra">Practica con selectores</p>
+        <p id="verde" class="otra">A la grande le puse cuca</p>
+        <p class="zebra">Soy un parrafo con clase</p>
+        <p class="zebra">Soy un parrafo con más clase</p>
+
+        <ul id="lista">
+            <li><a href="https://google.com" title="Google">Ir a Google</a></li>
+            <li><a href="https://facebook.com" title="Facebook">Ir a Facebook</a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </body>
+</html>

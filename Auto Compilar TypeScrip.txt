@@ -1,0 +1,23 @@
+Una vez creado el archivo .ts debemos compilarlo desde la consola haciendo
+tsc <Nombre-del-archivo.ts>
+Se crea un archivo con el mismo nombre, pero con extensión .js
+Tambien se puede configurar vs code para compilarlo: https://code.visualstudio.com/docs/typescript/typescript-compiling
+
+AUTO compilación:
+
+OPCION1: Usando la consola CYGWIN
+Abrir la consola de CYGWIN e ir a la carpeta donde creamos los archivos .ts
+escribir el comando: tsc -w *.ts --> Esto "observa" permanentemente los cambios en los archivos .ts
+y los compila automáticamente
+
+OPCION 2: Usando la extensión TypeScript Auto Compiler de VS Code
+Instalar la extensión https://marketplace.visualstudio.com/items?itemName=morissonmaciel.typescript-auto-compiler
+En la carpeta donde tenemos el proyecto, crear el archivo tsconfig.json con el contenido:
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "sourceMap": true
+    }
+}
+La extensión se encargará automáticamente de compilar los .ts cuando hayan cambios.
